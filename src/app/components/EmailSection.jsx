@@ -2,6 +2,7 @@
 import React, { useState } from "react";
 import GithubIcon from "../../../public/github-icon.svg";
 import LinkedinIcon from "../../../public/linkedin-icon.svg";
+import EmialIcon from "../../../public/email.svg";
 import Link from "next/link";
 import Image from "next/image";
 
@@ -51,15 +52,15 @@ const EmailSection = () => {
         </h5>
         <p className="text-[#ADB7BE] mb-4 max-w-md">
           {" "}
-          I&apos;m currently looking for new opportunities, my inbox is always
-          open. Whether you have a question or just want to say hi, I&apos;ll
-          try my best to get back to you!
+        
         </p>
         <div className="socials flex flex-row gap-2">
-          <Link href="github.com">
-            <Image src={GithubIcon} alt="Github Icon" />
+
+          <Link href="mailto:tirsitkiber@gmail.com">
+            <Image src={EmialIcon}  className="invert w-12"alt="Mail Icon" />
           </Link>
-          <Link href="linkedin.com">
+
+          <Link href="https://www.linkedin.com/in/tirsit-zemenu-907ba72a0?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app">
             <Image src={LinkedinIcon} alt="Linkedin Icon" />
           </Link>
         </div>
